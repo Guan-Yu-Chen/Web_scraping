@@ -15,7 +15,7 @@ WeatherInfo = obj["cwaopendata"]["dataset"]["locations"]
 time = obj["cwaopendata"]["sent"][0:10]
 
 for area in WeatherInfo["location"]:
-    if area["geocode"] == "67000280":
+    if area["geocode"] == "6703200":
         district = WeatherInfo["locationsName"] + area["locationName"]
         MaxT = area["weatherElement"][3]["time"][0]["elementValue"]["value"]
         MinT = area["weatherElement"][4]["time"][0]["elementValue"]["value"]
